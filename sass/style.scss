@@ -1,0 +1,129 @@
+/*Global*/
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.7;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #333939;
+	color:white;
+    }
+
+.container{
+    max-width: 1140px;
+    padding: 0 20px;
+    margin: auto;
+	text-align: center;
+}
+	
+section {
+    padding: 50px 0;
+}
+
+/*header*/	
+.head{
+	background-image: url('https://i.postimg.cc/VvMZFYWy/pexels-george-becker-129742.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 400px;
+	position: relative;
+}
+
+.page {
+	position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	text-align: center;
+}
+header h1{
+
+color: #fe7f00;
+margin: 0;
+font-size:60px;
+}
+
+header p{
+font-family: 'Dancing Script', cursive;
+margin: 0;
+font-size: 20px;
+}
+
+/*section*/
+.instruction ul{
+	list-style-type: none;
+	
+}
+
+.instruction p, li{
+	font-family: 'Dancing Script', cursive;
+	font-size: 22px;
+	
+} 
+
+/*game*/
+#round{
+	margin: 20px 0;
+	height: 40px;
+	font-weight: bold;
+}
+.buttons{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+button {
+	flex: 0 0 33.333%;
+	width: 250px;
+	padding: 20px;
+	margin: 20px 20px;
+	background-color: #369cce;
+	color: white;
+	font-size: 25px;
+	text-transform: uppercase;
+	border: 2px solid #66aacc;
+	border-radius: 10px;
+	transition: background 1s;
+	transition: transform 1s;
+}
+
+button:hover {
+	background-color: #5a117c;
+	border: 2px solid #480e63;
+	transform: scale(1.1);
+}
+	
+#messages{
+	font-size: 30px;
+	margin-top: 50px;
+	color: #fe7f00;
+	height: 150px;
+}
+
+.scores{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	color: red;
+	font-size: 20px;
+}
+
+.your_score{
+	flex: 0 0 50%;
+}
+
+.computer_score{
+	flex: 0 0 50%;
+}
+/*footer*/
+.page-footer {
+	text-align: center;
+    background-color: #242424;
+    padding: 5px;
+    color: #ffffff;
+   }

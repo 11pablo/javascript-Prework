@@ -4,16 +4,50 @@
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-			<button id="button-rock">Kamień</button>
-			<button id="button-paper">Papier</button>
-			<button id="button-scissors">Nożyce</button>
+	<header>
+		<div class="head">
+			<div class="page">
+				<h1>GRA PAPIER KAMIEŃ NOŻYCE</h1>
+				<p>Witaj i zagraj.</p>
+			</div>
 		</div>
-		<div id="messages"></div>
-	</div>
+	</header>
+
+	<section class="instruction">
+		<div class="container">
+			<h3>Instrukcja</h3>
+			<p>Jest to gra losowa w której gracz posługuje się symbolami, Gracz który pokazał silniejszy symbol, otrzymuje jeden punkt. W przypadku pokazania dwóch takich samych symboli następuje remis. A oto zasady:</p>
+			<ul>
+				<li>Kamień tępi nożyczki</li>
+				<li>Nożyce tną papier</li>
+				<li>Papier owija kamień</li>
+			</ul>
+		</div>
+	</section>
+	
+	<section class="game">
+		<div class="container">
+			<div id="round"></div>
+			<div id="buttons">
+				<button id="button-rock">Kamień</button>
+				<button id="button-paper">Papier</button>
+				<button id="button-scissors">Nożyce</button>
+			</div>
+			<div id="messages"></div>
+			<div class="scores">
+				<div id="your_score"></div>
+				<div id="computer_score"></div>
+			</div>
+		</div>
+	</section>	
+	<footer class="page-footer">
+        <p> Gameo &copy; 2021</p>
+    </footer>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>
