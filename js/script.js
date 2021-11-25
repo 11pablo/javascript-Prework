@@ -4,14 +4,14 @@
  * Describe this function...
  */
 
-let buttonTest, buttonRock, buttonPaper, buttonScissors, yourScore=0, computerScore=0, round=0, player, computer;
+let yourScore = 0, computerScore = 0, round=0;
 
-buttonTest = document.getElementById('button-test');
-buttonRock = document.getElementById('button-rock');
-buttonPaper = document.getElementById('button-paper');
-buttonScissors = document.getElementById('button-scissors');
-player = document.getElementById('your_score');
-computer = document.getElementById('computer_score');
+let buttonTest = document.getElementById('button-test');
+let buttonRock = document.getElementById('button-rock');
+let buttonPaper = document.getElementById('button-paper');
+let buttonScissors = document.getElementById('button-scissors');
+let player = document.getElementById('your_score');
+let computer = document.getElementById('computer_score');
 
 function buttonClicked(argButtonName) {
   clearMessages();
@@ -53,7 +53,7 @@ function buttonClicked(argButtonName) {
 	  }
 	  round += 1;
 	  printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-	  player.innerHTML = 'Twuj wynik: ' + yourScore;
+	  player.innerHTML = 'Twój wynik: ' + yourScore;
 	  computer.innerHTML = 'Wynik przeciwnika: ' + computerScore;
 	  printRound('Runda: ' + round);
 	}
