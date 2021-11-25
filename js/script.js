@@ -4,7 +4,7 @@
  * Describe this function...
  */
 
-var argButtonName, buttonTest, buttonRock, buttonPaper, buttonScissors, yourScore=0, computerScore=0, round=0, player, computer;
+let buttonTest, buttonRock, buttonPaper, buttonScissors, yourScore=0, computerScore=0, round=0, player, computer;
 
 buttonTest = document.getElementById('button-test');
 buttonRock = document.getElementById('button-rock');
@@ -18,7 +18,7 @@ function buttonClicked(argButtonName) {
   clearRound();
   console.log(argButtonName + ' został kliknięty');
   
-	var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+	let computerMove, playerMove, randomNumber, playerInput;
 
 	function getMoveName(argMoveId) {
 	  console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
