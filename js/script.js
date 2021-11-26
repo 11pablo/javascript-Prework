@@ -6,12 +6,12 @@
 
 let yourScore = 0, computerScore = 0, round=0;
 
-let buttonTest = document.getElementById('button-test');
-let buttonRock = document.getElementById('button-rock');
-let buttonPaper = document.getElementById('button-paper');
-let buttonScissors = document.getElementById('button-scissors');
-let player = document.getElementById('your_score');
-let computer = document.getElementById('computer_score');
+const buttonTest = document.getElementById('button-test');
+const buttonRock = document.getElementById('button-rock');
+const buttonPaper = document.getElementById('button-paper');
+const buttonScissors = document.getElementById('button-scissors');
+const player = document.getElementById('your_score');
+const computer = document.getElementById('computer_score');
 
 function buttonClicked(argButtonName) {
   clearMessages();
