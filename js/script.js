@@ -4,7 +4,7 @@
  * Describe this function...
  */
 
-let yourScore = 0, computerScore = 0, round=0;
+let yourScore = 0, computerScore = 0, round = 0;
 
 const buttonTest = document.getElementById('button-test');
 const buttonRock = document.getElementById('button-rock');
@@ -14,11 +14,9 @@ const player = document.getElementById('your_score');
 const computer = document.getElementById('computer_score');
 
 function buttonClicked(argButtonName) {
-  clearMessages();
-  clearRound();
-  console.log(argButtonName + ' został kliknięty');
-  
-	let computerMove, playerMove, randomNumber, playerInput;
+	clearMessages();
+	clearRound();
+	console.log(argButtonName + ' został kliknięty');
 
 	function getMoveName(argMoveId) {
 	  console.log('wywołano funkcję getMoveName z argumentem: ' + argMoveId);
@@ -58,12 +56,11 @@ function buttonClicked(argButtonName) {
 	  printRound('Runda: ' + round);
 	}
 
-	console.log('wybór ruchu gracza to: ' + playerInput);
-	playerMove = argButtonName;
+	const playerMove = argButtonName;
 	console.log('ruch gracza to: ' + playerMove);
-	randomNumber = Math.floor(Math.random() * 3 + 1);
+	const randomNumber = Math.floor(Math.random() * 3 + 1);
 	console.log('wylosowana liczba to: ' + randomNumber);
-	computerMove = getMoveName(randomNumber);
+	const computerMove = getMoveName(randomNumber);
 	console.log('ruch komputera to: ' + computerMove);
 	displayResult(playerMove, computerMove);
 }
